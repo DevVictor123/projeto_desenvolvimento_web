@@ -1,43 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Social Eats</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contato</title>
 </head>
 <body>
-    <header>
-        <h1>Social Eats</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="contato">
-            <h2>Entre em Contato Conosco</h2>
-            <form action="#" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+  <nav>
+    <div class="container">
+      <h1>Logo</h1>
+      <div class="create">
+        <button class="btn btn-primary">Criar</button>
+        <div class="profile-photo">
+          <img src="" alt="Foto de Perfil">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="search-bar">
+        <input type="search" placeholder="Pesquisar">
+      </div>
+    </div>
+  </nav>
 
-    <footer>
-        <p>&copy; 2023 Social Eats</p>
-    </footer>
+  <main>
+    <div class="container">
+      <aside>
+        <h2>Informações de Contato</h2>
+        <p class="text-muted">Entre em contato conosco para mais informações.</p>
+        <ul>
+          <li>Email: exemplo@email.com</li>
+          <li>Telefone: (123) 456-7890</li>
+          <li>Endereço: Rua Exemplo, 123</li>
+        </ul>
+      </aside>
+
+      <section>
+        <h2>Formulário de Contato</h2>
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </section>
+
+      <aside>
+        <h2>Nossos Escritórios</h2>
+        <ul>
+          <li>São Paulo</li>
+          <li>Rio de Janeiro</li>
+          <li>Brasília</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
 </body>
 </html>
